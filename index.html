@@ -1,11 +1,3 @@
-<script>
-document.addEventListener('click', () => {
-  if (typeof unityInstance !== 'undefined' && unityInstance.Module) {
-    unityInstance.Module.ResumeAudioContext();
-  }
-}, { once: true });
-</script>
-
 <!DOCTYPE html>
 <html lang="en-us">
   <head>
@@ -61,12 +53,12 @@ document.addEventListener('click', () => {
       }
 
       var buildUrl = "Build";
-      var loaderUrl = buildUrl + "/WebGLBuild.loader.js";
+      var loaderUrl = buildUrl + "/AstrologyWeb-build.loader.js";
       var config = {
         arguments: [],
-        dataUrl: buildUrl + "/WebGLBuild.data",
-        frameworkUrl: buildUrl + "/WebGLBuild.framework.js",
-        codeUrl: buildUrl + "/WebGLBuild.wasm",
+        dataUrl: buildUrl + "/AstrologyWeb-build.data",
+        frameworkUrl: buildUrl + "/AstrologyWeb-build.framework.js",
+        codeUrl: buildUrl + "/AstrologyWeb-build.wasm",
         streamingAssetsUrl: "StreamingAssets",
         companyName: "DefaultCompany",
         productName: "Box",
